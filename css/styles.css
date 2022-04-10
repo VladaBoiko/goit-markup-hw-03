@@ -1,0 +1,237 @@
+:root{
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --focus-color: #2196F3;
+    --heigh-logo-color: black;
+    --hero-background-color: #2F303A;  
+    --hero-text-color: #FFFFFF;
+    --footer-bcg-color: #2F303A;
+    --footer-logo-color: white;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --nav-logo-web-color: #2196F3;
+    --cards-bcg-color: white;
+    --hero-button-fh-color: #188CE8; 
+    --main-letter-spacing: 0.03em;
+
+}
+    
+body{
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--main-text-color);
+    background-color: white;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+
+/* навигация */
+.nav-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--heigh-logo-color);
+    text-decoration: none;
+}
+
+
+.nav-logo-web{
+    color: var(--nav-logo-web-color);
+
+}
+
+.nav-navigation{
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.nav-navigation:hover,
+.nav-navigation:focus,
+.link:hover, 
+.link:focus{
+    color: var(--focus-color);
+}
+.nav-navigation.current{
+    color: var(--focus-color);
+}
+
+/* -------------------------------Контакты------------------------------- */
+.contacts{
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    text-decoration: none;
+    }
+   
+/* ----------------------------герой--------------------------------------- */
+.hero{
+    background-color: var(--hero-background-color); 
+}
+.hero-text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text-color); 
+}
+.hero-button{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--focus-color);
+    color: var(--hero-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    }
+.hero-button:hover,
+.hero-button:focus{
+    background-color: var(--hero-button-fh-color);
+}
+
+/* --------------------другое--------------------- */
+.ul{
+    list-style: none;
+}
+
+
+/* преимущества */
+.exelents-title{
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    letter-spacing: var(--main-letter-spacing);
+    font-size: 14px;
+    
+}
+.exelents-text{
+    line-height: 1.71;  
+}
+
+.what-we-do-title{    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+/* -------------------------наша команда ------------------------*/
+.our-team-title{
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+    letter-spacing: var(--main-letter-spacing);
+}
+.our-team-name{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color);
+}
+.our-team-position{
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+}
+
+/* -----------------------------------Футер ----------------------------------*/
+.footer{
+    background-color: var(--footer-bcg-color);
+}
+.footer-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--footer-logo-color);
+    text-decoration: none;
+    }
+.footer-logo-web{
+     color: var(--nav-logo-web-color);
+}
+.address-geography{
+    
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--hero-text-color);
+    text-decoration: none;
+}
+.footer-contact{
+    
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+   
+}
+/* --------------------------Портфолио--------------------------- */
+/* ----карточки------- */
+.project-title{
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+.project-type{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+
+
+
+}
+.project-cards{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
+    color: var(--title-text-color);
+    text-decoration: none;
+    background-color: var(--cards-bcg-color);
+}
+
+/* -----------кнопки------------- */
+.hero-button,
+.portfolio-button{
+    cursor: pointer;
+}
+
+.portfolio-button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus{
+    background-color: var(--focus-color);
+    color: var(--hero-text-color);
+}
