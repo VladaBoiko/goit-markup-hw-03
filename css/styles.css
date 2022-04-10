@@ -31,18 +31,37 @@ body{
     background-color: white;
     letter-spacing: 0.03em;
     font-size: 14px;
-    width: 1200px;
+    
+}
+.container{
+   width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    margin: auto; 
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
 }
+/* --------------header----------------- */
+.ul.nav{
+    display: flex;
+   
+}
 
 /* навигация */
+.nav-navigation-list{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    
+}
 .nav-logo{
     font-family: 'Raleway';
     font-weight: 700;
@@ -50,20 +69,37 @@ h1,h2,h3,h4,h5,h6,p,ul{
     line-height: 1.19;
     color: var(--heigh-logo-color);
     text-decoration: none;
+    align-items: center;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-
-
 .nav-logo-web{
     color: var(--nav-logo-web-color);
-
+}
+.site-nav{
+    display: flex;
 }
 
+
 .nav-navigation{
+    
     color: var(--title-text-color);
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+.nav-navigation.current{
+    color: var(--focus-color);
+}
+.section-header{
+    display: flex;
+    align-items: center;
+}
+.ul.nav .nav-navigation-list:not(:last-child){
+    margin-right: 50px;
 }
 .nav-navigation:hover,
 .nav-navigation:focus,
@@ -71,13 +107,22 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .link:focus{
     color: var(--focus-color);
 }
-.nav-navigation.current{
-    color: var(--focus-color);
-}
+
 
 /* -------------------------------Контакты------------------------------- */
+.contact-section{
+    display: flex;
+}
+.contact-section .contacts-list:not(:last-child){
+    margin-right: 50px;
+}
+.contacts.link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .contacts{
-  
+  display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -89,14 +134,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .hero{
    
     background-color: var(--hero-background-color);     
-    
-    margin-bottom: 94px;
     text-align: center;
     align-items: center;
 }
 .hero-text{
     margin-top: 0;
-    margin-bottom: 30px;;
+    
 
     font-weight: 900;
     font-size: 44px;
@@ -131,13 +174,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 /* --------------------другое--------------------- */
 .ul{
     list-style: none;
-    
 }
 
 
 /* преимущества */
 .exelents-list{
-    margin-bottom: 94px;
+    padding-bottom: 0;
 }
 .exelents-title{
     font-weight: 700;
@@ -153,9 +195,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 
 /* -----------------what we do-------------- */
-.what-we-do{
-    margin-bottom: 94px;
-}
 .what-we-do-title{    
     font-weight: 700;
     font-size: 36px;
@@ -220,14 +259,24 @@ h1,h2,h3,h4,h5,h6,p,ul{
    
 }
 /* --------------------------Портфолио--------------------------- */
-.container{
+.portfolio-container{
     outline: 5px solid tomato;
-    margin-bottom: 94px;
+
 }
-.navigation{
-    outline: 5px solid aqua;
-    margin-bottom: 94px;
+.ul.button{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.portfolio-button{
+    display: block;
+ 
+}
+
+
+
 /* ----карточки------- */
 .project-title{
     color: var(--title-text-color);
