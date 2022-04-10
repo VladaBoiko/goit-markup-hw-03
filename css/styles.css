@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root{
     --main-text-color: #757575;
     --title-text-color: #212121;
@@ -21,8 +31,16 @@ body{
     background-color: white;
     letter-spacing: 0.03em;
     font-size: 14px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
-
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
 
 /* навигация */
 .nav-logo{
@@ -69,25 +87,36 @@ body{
    
 /* ----------------------------герой--------------------------------------- */
 .hero{
-    background-color: var(--hero-background-color); 
+   
+    background-color: var(--hero-background-color);     
+    
+    margin-bottom: 94px;
+    text-align: center;
+    align-items: center;
 }
 .hero-text{
+    margin-top: 0;
+    margin-bottom: 30px;;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-text-color); 
+    color: var(--hero-text-color);
+    
+    
 }
+
 .hero-button{
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     letter-spacing: 0.06em;
     background-color: var(--focus-color);
     color: var(--hero-text-color);
@@ -102,10 +131,14 @@ body{
 /* --------------------другое--------------------- */
 .ul{
     list-style: none;
+    
 }
 
 
 /* преимущества */
+.exelents-list{
+    margin-bottom: 94px;
+}
 .exelents-title{
     font-weight: 700;
     line-height: 1.14;
@@ -113,11 +146,16 @@ body{
     letter-spacing: var(--main-letter-spacing);
     font-size: 14px;
     
+    margin-bottom: 10px;
 }
 .exelents-text{
     line-height: 1.71;  
 }
 
+/* -----------------what we do-------------- */
+.what-we-do{
+    margin-bottom: 94px;
+}
 .what-we-do-title{    
     font-weight: 700;
     font-size: 36px;
@@ -182,6 +220,14 @@ body{
    
 }
 /* --------------------------Портфолио--------------------------- */
+.container{
+    outline: 5px solid tomato;
+    margin-bottom: 94px;
+}
+.navigation{
+    outline: 5px solid aqua;
+    margin-bottom: 94px;
+}
 /* ----карточки------- */
 .project-title{
     color: var(--title-text-color);
@@ -192,6 +238,7 @@ body{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     }
 .project-type{
     font-family: 'Roboto';
@@ -212,7 +259,9 @@ body{
     color: var(--title-text-color);
     text-decoration: none;
     background-color: var(--cards-bcg-color);
+    /* margin-bottom: 20px; */
 }
+
 
 /* -----------кнопки------------- */
 .hero-button,
@@ -229,6 +278,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    min-width: 130px;
+    border-color: transparent;
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
