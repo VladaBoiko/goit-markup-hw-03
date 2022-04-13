@@ -140,11 +140,12 @@ img{
    
 /* ----------------------------герой--------------------------------------- */
 .hero{
-   padding-top: 200px;
-   padding-bottom: 200px;
     background-color: var(--hero-background-color);     
-    text-align: center;
-    
+    text-align: center; 
+}
+.hero-content{
+    padding-top: 200px;
+    padding-bottom: 200px;   
 }
 .hero-text{    
     width: 696px;
@@ -157,8 +158,7 @@ img{
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-   
+    line-height: 1.36;   
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
@@ -166,7 +166,6 @@ img{
 
 .hero-button{
     padding: 10px 32px;
-    margin-bottom: 200px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
