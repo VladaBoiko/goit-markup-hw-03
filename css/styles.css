@@ -100,7 +100,10 @@ img{
 .section-header{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    
+}
+.header-border{
+   border-bottom: 1px solid #ECECEC; 
 }
 .ul.nav .nav-navigation-list:not(:last-child){
     margin-right: 50px;
@@ -110,9 +113,6 @@ img{
 .link:hover, 
 .link:focus{
     color: var(--focus-color);
-}
-.header-section{
-    margin-bottom: 0;
 }
 
 /* -------------------------------Контакты------------------------------- */
@@ -207,6 +207,8 @@ img{
     color: var(--title-text-color);
     letter-spacing: var(--main-letter-spacing);
     font-size: 14px;
+    text-transform: uppercase;
+
     
     margin-bottom: 10px;
 }
@@ -394,6 +396,7 @@ img{
 /* -----------кнопки------------- */
 .portfolio-name{
     visibility: hidden;
+    display: none;
 }
 .hero-button,
 .portfolio-button{
