@@ -142,9 +142,7 @@ img{
 .hero{
     background-color: var(--hero-background-color);     
     text-align: center; 
-}
-.hero-content{
-    padding-top: 200px;
+        padding-top: 200px;
     padding-bottom: 200px;   
 }
 
